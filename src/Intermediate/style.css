@@ -1,0 +1,18 @@
+.container{
+    background-color: aquamarine;
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    width: full;
+    height: 20vh;
+    border-radius: 20px;
+}
+
+.text{
+    font-weight: 700;
+    font-size: larger;
+    color: red;
+    text-align: center;
+
+}

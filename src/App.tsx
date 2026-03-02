@@ -20,7 +20,9 @@ function App() {
                 <li>Event Handling</li>
             </ul>
 
-            <h2>Intermediate React</h2>
+            <Link to={'/intermediate'}>
+                <h2>Intermediate React</h2>
+            </Link>
             <ul>
                 <li>Lifecycle & Hooks</li>
                 <li>Conditional Rendering & Lists</li>

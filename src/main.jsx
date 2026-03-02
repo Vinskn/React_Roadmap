@@ -4,7 +4,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import Foundation from './Foundational/Foundation.tsx'
+import Intermediate from './Intermediate/Intermediate.tsx'
 
+/**
+ * Bisa ditambah loader jika butuh fetch API
+ * Action kalau ada submit form
+ * errorElement untuk custom error page per route
+ */
 const myRouter = createBrowserRouter([
     {
         path: '/',
@@ -13,6 +19,10 @@ const myRouter = createBrowserRouter([
     {
         path: '/foundation',
         element: <Foundation />
+    },
+    {
+        path: '/intermediate',
+        element: <Intermediate />
     }
 ])
 
