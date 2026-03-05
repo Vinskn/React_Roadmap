@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.tsx'
 import Foundation from './Foundational/Foundation.tsx'
 import Intermediate from './Intermediate/Intermediate.tsx'
+import Advance from './Advance/Advance.tsx'
 
 /**
  * Bisa ditambah loader jika butuh fetch API
@@ -23,6 +24,10 @@ const myRouter = createBrowserRouter([
     {
         path: '/intermediate',
         element: <Intermediate />
+    },
+    {
+        path: '/advance',
+        element: <Advance />
     }
 ])
 

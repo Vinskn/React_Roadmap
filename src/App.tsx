@@ -5,13 +5,13 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className=''>
-        <h1>React Roadmap</h1>
+    <div className='p-10'>
+        <h1 className='text-5xl font-bold mb-5'>React Roadmap</h1>
 
         <div>
             <Link to={'/foundation'}>
-                <h2>
-                    Foundational React
+                <h2 className='text-2xl font-bold mb-2 mt-5 hover:underline hover:underline-offset-5 cursor-pointer'>
+                    Foundational React ➡️
                 </h2>
             </Link>
             <ul>
@@ -21,7 +21,7 @@ function App() {
             </ul>
 
             <Link to={'/intermediate'}>
-                <h2>Intermediate React</h2>
+                <h2 className='text-2xl font-bold mb-2 mt-5 hover:underline hover:underline-offset-5 cursor-pointer'>Intermediate React ➡️</h2>
             </Link>
             <ul>
                 <li>Lifecycle & Hooks</li>
@@ -31,7 +31,9 @@ function App() {
                 <li>Styling</li>
             </ul>
 
-            <h2>Advanced React</h2>
+            <Link to={'/advance'}>
+                <h2 className='text-2xl font-bold mb-2 mt-5 hover:underline hover:underline-offset-5 cursor-pointer'>Advanced React ➡️</h2>
+            </Link>
             <ul>
                 <li>Context API</li>
                 <li>Hooks Deep Dive (useReducer, useCallback)</li>

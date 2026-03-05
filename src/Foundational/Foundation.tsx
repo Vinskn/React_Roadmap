@@ -5,8 +5,8 @@ import PropsTest from './Components/PropsTest';
 
 const Foundation = () => {
 
-    const [ counter, setCounter ] = useState(0);
-    const [ test, setTest ] = useState(false);
+    const [ counter, setCounter ] = useState<number>(0);
+    const [ test, setTest ] = useState<boolean>(false);
   return (
     <>
         <h1>Foundational React</h1>
@@ -33,9 +33,9 @@ const Foundation = () => {
                 - state bisa diberi default value dengan menambahkan valuenya di dalam ()
         */}
         <div>
-            <button onClick={() => setCounter(c => c-=1)}> - </button>
+            <button onClick={() => setCounter(c => c-1)}> - </button>
             <span>{counter}</span>
-            <button onClick={() => setCounter(c => c+=1)}> + </button>
+            <button onClick={() => setCounter(c => c+1)}> + </button>
         </div>
 
         {/* 

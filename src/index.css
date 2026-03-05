@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .page {
     background: #252424;
     padding: 10px;

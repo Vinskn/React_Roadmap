@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { objTypes } from './types';
+import { formType, objTypes } from './types';
 import { Field, Form, Formik } from 'formik';
 import FormikForm from './components/FormikForm';
 import "./style.css"
@@ -7,7 +7,7 @@ import ButtonStyled from './components/ButtonStyled';
 
 const Intermediate = () => {
     // contoh penggunaan useeffect
-    const [ count, setCount ] = useState(0);
+    const [ count, setCount ] = useState<number>(0);
     
     /**
      * document.title = `Count ${count}`
@@ -56,9 +56,10 @@ const Intermediate = () => {
     ]
 
     //------------------------------------------------------------------------------------------------------------
-    const[ name, setName ] = useState('');
-    const[ telp, setTelp ] = useState('')
-    const[ formikValue, setFormikValue ] = useState({});
+    const[ name, setName ] = useState<string>('');
+    const[ telp, setTelp ] = useState<string>('')
+
+    const[ formikValue, setFormikValue ] = useState<formType>();
 
     useEffect(() => console.log(formikValue), [formikValue])
     

@@ -3,3 +3,8 @@ export interface objTypes {
     jurusan: string
     isScience: boolean
 }
+
+export interface formType {
+    name: string
+    noTelp: string
+}
