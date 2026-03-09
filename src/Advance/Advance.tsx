@@ -4,6 +4,7 @@ import Context1 from "./components/Context1";
 import { ColorContext } from "./components/ColorContext";
 import CounterReducer from "./reducer/CounterReducer";
 import TryCallback from "./components/TryCallback";
+import { Link } from "react-router-dom";
 
 // import komponen lazy element --> downloadSimulate contoh untuk waktu download
 const Dashboard = lazy(() => downloadSimulate(import("./components/Dashboard")));
@@ -149,6 +150,16 @@ const Advance = () => {
                     </Suspense>
                 )}
             </div>
+
+            <hr />
+            <Link to={'dashboard'}>
+                <button className="my-10 bg-blue-500 px-5 py-2 rounded-lg text-white">HOC Test</button>
+            </Link>
+
+            <hr />
+            <Link to={'performance'}>
+                <button className="my-10 bg-blue-500 px-5 py-2 rounded-lg text-white">Performance Test</button>
+            </Link>
         </div>
     );
 };

@@ -1,9 +1,6 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className='p-10'>
         <h1 className='text-5xl font-bold mb-5'>React Roadmap</h1>
@@ -41,9 +38,13 @@ function App() {
                 <li>High-Order Components</li>
                 <li>Performance Optimization</li>
             </ul>
+
+            <Link to={'/redux'}>
+                <h2 className='text-2xl font-bold mb-2 mt-5 hover:underline hover:underline-offset-5 cursor-pointer'>Redux ➡️</h2>
+            </Link>
         </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
