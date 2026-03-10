@@ -46,6 +46,10 @@ function App() {
             <Link to={'/zustand'}>
                 <h2 className='text-2xl font-bold mb-2 mt-5 hover:underline hover:underline-offset-5 cursor-pointer'>Zustand ➡️</h2>
             </Link>
+
+            <Link to={'/tanstack'}>
+                <h2 className='text-2xl font-bold mb-2 mt-5 hover:underline hover:underline-offset-5 cursor-pointer'>Tanstack ➡️</h2>
+            </Link>
         </div>
     </div>
   );

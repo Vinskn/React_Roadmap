@@ -17,6 +17,10 @@ import DashboardHoc from "./Advance/components/tesHoc/DashboardHoc.tsx";
 import Parent from "./Advance/components/performanceOpt/Parent.tsx";
 import ParentZus from "./zustandTes/ParentZus.tsx";
 import HookHome from "./Advance/components/customHook/HookHome.tsx";
+import TanHome from "./tesTanstack/TanHome.tsx";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
 
 /**
  * Bisa ditambah loader jika butuh fetch API
@@ -66,7 +70,15 @@ const myRouter = createBrowserRouter([
     {
         path: '/zustand',
         element: <ParentZus />
-    }
+    },
+    {
+        path: '/tanstack',
+        element: (
+            <QueryClientProvider client={queryClient}>
+                <TanHome />
+            </QueryClientProvider>
+        )
+    },
 ]);
 
 createRoot(document.getElementById("root")).render(
