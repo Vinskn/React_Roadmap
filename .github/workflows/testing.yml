@@ -1,0 +1,24 @@
+name: Testing
+
+# akan trigger saat push dan pull request ke branch main
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# akan menggunakan ubuntu latest dan node versi 20
+# akan menginstall dependensi juga akan menghasilkan echo
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: npm install
+      - name: Give Echo
+        run: echo "Hello World"
