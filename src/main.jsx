@@ -16,6 +16,7 @@ import Settings from "./Advance/components/tesHoc/Settings.tsx";
 import DashboardHoc from "./Advance/components/tesHoc/DashboardHoc.tsx";
 import Parent from "./Advance/components/performanceOpt/Parent.tsx";
 import ParentZus from "./zustandTes/ParentZus.tsx";
+import HookHome from "./Advance/components/customHook/HookHome.tsx";
 
 /**
  * Bisa ditambah loader jika butuh fetch API
@@ -56,6 +57,10 @@ const myRouter = createBrowserRouter([
     {
         path: '/advance/performance',
         element: <Parent />
+    },
+    {
+        path: '/advance/customHook',
+        element: <HookHome />
     },
     reduxRoutes,
     {

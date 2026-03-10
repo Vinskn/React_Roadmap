@@ -160,6 +160,11 @@ const Advance = () => {
             <Link to={'performance'}>
                 <button className="my-10 bg-blue-500 px-5 py-2 rounded-lg text-white">Performance Test</button>
             </Link>
+
+            <hr />
+            <Link to={'customHook'}>
+                <button className="my-10 bg-blue-500 px-5 py-2 rounded-lg text-white">Custom Hook</button>
+            </Link>
         </div>
     );
 };
